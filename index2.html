@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Estilo das categorias */
+        .categoria {
+            margin-bottom: 30px;
+        }
+
+        .categoria h2 {
+            font-size: 1.8rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo da lista de produtos */
+        .produto-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .produto {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(20% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .produto p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Produtos Fictícios</h1>
+        <p>Produtos para prática de web scraping</p>
+    </header>
+
+    <!-- Categoria 1 -->
+    <section class="categoria">
+        <h2>Eletrônicos</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <h3>Smartphone X200</h3>
+                <p>Alta performance e câmera de última geração.</p>
+                <p class="preco">R$ 2.499,99</p>
+            </div>
+            <div class="produto">
+                <h3>Notebook Pro 15"</h3>
+                <p>Poder de processamento para profissionais.</p>
+                <p class="preco">R$ 5.399,00</p>
+            </div>
+            <div class="produto">
+                <h3>Smartwatch Fit</h3>
+                <p>Controle sua saúde e atividades.</p>
+                <p class="preco">R$ 899,90</p>
+            </div>
+            <!-- Adicione mais produtos da categoria Eletrônicos aqui -->
+        </div>
+    </section>
+
+    <!-- Categoria 2 -->
+    <section class="categoria">
+        <h2>Livros</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <h3>Aventuras na Programação</h3>
+                <p>Guia completo para iniciantes em programação.</p>
+                <p class="preco">R$ 45,90</p>
+            </div>
+            <div class="produto">
+                <h3>História da Ciência</h3>
+                <p>Uma jornada pelo desenvolvimento científico.</p>
+                <p class="preco">R$ 67,50</p>
+            </div>
+            <!-- Adicione mais produtos da categoria Livros aqui -->
+        </div>
+    </section>
+
+    <!-- Categoria 3 -->
+    <section class="categoria">
+        <h2>Moda</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <h3>Camisa Casual</h3>
+                <p>Conforto e estilo para o dia a dia.</p>
+                <p class="preco">R$ 79,99</p>
+            </div>
+            <div class="produto">
+                <h3>Calça Jeans</h3>
+                <p>Modelagem slim fit para um look moderno.</p>
+                <p class="preco">R$ 99,90</p>
+            </div>
+            <!-- Adicione mais produtos da categoria Moda aqui -->
+        </div>
+    </section>
+
+    <!-- Categoria 4 -->
+    <section class="categoria">
+        <h2>Esportes</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <h3>Tênis de Corrida</h3>
+                <p>Desenvolvido para conforto em longas distâncias.</p>
+                <p class="preco">R$ 299,99</p>
+            </div>
+            <div class="produto">
+                <h3>Bola de Futebol</h3>
+                <p>Material resistente para maior durabilidade.</p>
+                <p class="preco">R$ 59,90</p>
+            </div>
+            <!-- Adicione mais produtos da categoria Esportes aqui -->
+        </div>
+    </section>
+
+    <!-- Categoria 5 -->
+    <section class="categoria">
+        <h2>Casa e Jardim</h2>
+        <div class="produto-lista">
+            <div class="produto">
+                <h3>Vaso Decorativo</h3>
+                <p>Elegância para decorar seu ambiente.</p>
+                <p class="preco">R$ 39,99</p>
+            </div>
+            <div class="produto">
+                <h3>Kit de Jardinagem</h3>
+                <p>Tudo que você precisa para cuidar do seu jardim.</p>
+                <p class="preco">R$ 120,00</p>
+            </div>
+            <!-- Adicione mais produtos da categoria Casa e Jardim aqui -->
+        </div>
+    </section>
+</body>
+</html>
